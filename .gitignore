@@ -220,3 +220,4 @@ __marimo__/
 # Hidden files and directories
 .*
 !.gitignore
+!.github/
