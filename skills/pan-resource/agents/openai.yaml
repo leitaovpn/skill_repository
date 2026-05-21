@@ -1,0 +1,7 @@
+interface.short_description: 网盘资源搜索与转存（夸克/阿里云），LLM 匹配豆瓣/IMDb 元数据
+interface.display_name: pan-resource 网盘资源
+interface.default_prompt: |
+  流程：
+  1. 执行 `python skills/pan-resource/scripts/pan.py <engine> <keyword> [--driver <name>]... [--output <file>]` 搜索
+  2. 将 search_result + video_infos 作为 user prompt，结合 prompts/match_system.txt 为 system prompt，由 LLM 输出匹配结果
+  3. 对匹配结果逐条调用 `python skills/pan-resource/scripts/pan.py save <drive> <url> --name <name> --info source_folder=xxx,file_type=xxx,session=xxx,episode=xxx` 转存
