@@ -1,0 +1,6 @@
+# Optional local ASR only; plain message/voice extraction does not need these.
+pilk==0.2.4
+numpy>=2.0,<3
+scipy>=1.13,<2
+mlx-qwen3-asr==0.4.4
+zstandard>=0.23,<1
