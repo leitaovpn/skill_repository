@@ -221,3 +221,25 @@ __marimo__/
 .*
 !.gitignore
 !.github/
+
+# WeChat private runtime data must not be published.
+**/.wechat-local/
+**/WeChatLocal/
+**/WeChatLocalProbe/
+**/keys.json
+**/keys.json.partial
+skills/wechat-local-macos/config.json
+skills/wechat-local-macos/**/*.db
+skills/wechat-local-macos/**/*.db-wal
+skills/wechat-local-macos/**/*.db-shm
+skills/wechat-local-macos/**/*.silk
+skills/wechat-local-macos/**/*.pcm
+skills/wechat-local-macos/**/*.wav
+skills/wechat-local-macos/**/*.aiff
+skills/wechat-local-macos/**/*.safetensors
+skills/wechat-local-macos/**/*.npz
+skills/wechat-local-macos/**/source-audio/
+skills/wechat-local-macos/**/audio-wav/
+skills/wechat-local-macos/**/transcription-cache/
+skills/wechat-local-macos/**/voice-transcripts.json
+skills/wechat-local-macos/**/manifest.json
